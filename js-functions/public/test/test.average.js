@@ -2,10 +2,10 @@ describe("Average", function(){
 
   it("should have a sum function", function(){
 
-    expect( sum([1, 2, 3, 4]) ).to.equal(10);
-    expect( sum([20, 30, 15, 45]) ).to.equal(110);
-    expect( sum([-5, 0, 5]) ).to.equal(0);
-    expect( sum([]) ).to.equal(0);
+    expect(sum([1, 2, 3, 4])).to.equal(10);
+    expect(sum([20, 30, 15, 45])).to.equal(110);
+    expect(sum([-5, 0, 5])).to.equal(0);
+    expect(sum([])).to.equal(0);
 
   });
 
