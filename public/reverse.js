@@ -5,6 +5,17 @@
 */
 var reverseWord = function(word) {
 
+	var splitWord = word.split("");
+	var newSplit = []
+	
+	for (var i = 0; i < splitWord.length; i++) {
+
+        var current = splitWord[i]
+        
+		newSplit.unshift(current)
+	    
+	}
+	return newSplit.join("")
 }
 
 
@@ -16,5 +27,21 @@ var reverseWord = function(word) {
   - Return a string that contains each reversed word, in order
 */
 var reverseSentence = function(sentence) {
+	
+	var splitSentence = sentence.split(" ");
+	var newWords = [];
+
+	for(var i = 0; i < splitSentence.length; i++){
+    	var word = splitSentence[i];
+
+    	var wordScramble = reverseWord(word);
+    	
+    	newWords.push(wordScramble);
+    	
+    }
+    
+    var newSentence = newWords.join(" ")
+    
+    return newSentence
 
 }
