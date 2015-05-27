@@ -2,10 +2,16 @@
   This function should accept two numbers as parameters.
   It should return the value of the larger number.
 */
+var max = function(a, b) {
+	
+	if (a < b){
+		return b
+	}
 
-function max(a, b) {
-
+	return a
 }
+
+
 
 /*
   This function should accept THREE numbers as parameters.
@@ -13,7 +19,21 @@ function max(a, b) {
   You should make use of the max() function you just wrote.
 */
 
-function maxOfThree(a, b, c) {
+var maxOfThree= function (a, b, c) {
 
+	if (c < b){
+		return b;
+	}
+		if (c > a){
+		return c;
+	}
+
+	if (c > b) {
+		return c;
+	}
+
+	if (c === a){
+		return c;
+	}
 }
 

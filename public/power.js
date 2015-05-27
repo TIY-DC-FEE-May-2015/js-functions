@@ -3,8 +3,9 @@
   It should return the value of the numbers multiplied together.
 */
 
-function multiply(a, b) {
+multiply = function(a, b) {
 
+ 		return a * b 
 }
 
 /*
@@ -15,6 +16,9 @@ function multiply(a, b) {
 */
 
 function power(base, exponent) {
+
+
+	return Math.pow(base, exponent);
 
 }
 
