@@ -44,5 +44,9 @@ var reverseSentence = function(sentence) {
 
 
 console.log(reverseSentence("Ain't it, Jay?"))
-//Should return "t'niA ,ti ?yaJ" by making individual drows, hitting a space, starting a new drow 
+//Should return "t'niA ,ti ?yaJ" by splitting sentence into a array, and pushing each index value ("drow") into 
+//a ecnetnes array, then join
+
+
+//This is wrong, do not use: making individual drows, hitting a space, starting a new drow 
 // run drow, store it, add a space, add another drow
