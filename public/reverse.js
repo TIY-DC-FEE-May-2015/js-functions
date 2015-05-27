@@ -5,7 +5,19 @@
 */
 var reverseWord = function(word) {
 
+	var drow = ""
+
+	for (var i = 0; i < word.length; i++) {
+		drow = word[i] + drow
+	}
+
+	return drow
+
 }
+
+console.log(reverseWord("hello"))
+//expect to equal "olleh" - store in an array backward by unshifting, 
+//then a second loop to populate a string... or just populate the string
 
 
 /*
@@ -17,4 +29,20 @@ var reverseWord = function(word) {
 */
 var reverseSentence = function(sentence) {
 
+	var ecnetnes = []
+	array = sentence.split(" ")
+
+	for (var i = 0; i < array.length; i++) {
+
+		ecnetnes.push(reverseWord(array[i]))
+
+
+	}
+
+	return ecnetnes.join(" ")
 }
+
+
+console.log(reverseSentence("Ain't it, Jay?"))
+//Should return "t'niA ,ti ?yaJ" by making individual drows, hitting a space, starting a new drow 
+// run drow, store it, add a space, add another drow
