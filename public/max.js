@@ -5,6 +5,14 @@
 
 function max(a, b) {
 
+	if(a > b) {
+		return a
+	}
+
+	else {
+		return b
+	}
+
 }
 
 /*
@@ -14,6 +22,14 @@ function max(a, b) {
 */
 
 function maxOfThree(a, b, c) {
+
+	if (max(a, b) > c) {
+		return max(a, b);
+	}
+
+	else {
+		return c;
+	}
 
 }
 

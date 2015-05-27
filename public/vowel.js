@@ -9,6 +9,15 @@
 
 function isVowel(letter) {
 
+	var vowel = ["a", "e", "i", "o", "u"]
+
+	for (var i = 0; i < vowel.length; i++) {
+
+		if (letter.toLowerCase() === vowel[i]) {
+			return true
+		}
+	}
+	return false
 }
 
 /*
@@ -21,4 +30,16 @@ function isVowel(letter) {
 
 function countVowels(word) {
 
+	var array = word.split("")
+	var numberVowel = 0
+
+	for (var i = 0; i < array.length; i++){
+
+		if ( isVowel( array[i] ) ) {
+			
+			numberVowel += 1
+
+		}
+	}
+	return numberVowel
 }
