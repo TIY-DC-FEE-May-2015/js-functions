@@ -8,8 +8,19 @@
 */
 
 function isVowel(letter) {
+	var vowelBank = ["a","e","i","o","u"]
 
+	for (var i = 0; i < vowelBank.length; i++) {
+		if(letter.toLowerCase() === vowelBank[i]) {
+		    
+			return true
+	
+		} 
+		
+	}
+			return false
 }
+
 
 /*
   This function should accept a string as a parameter.
@@ -20,5 +31,13 @@ function isVowel(letter) {
 */
 
 function countVowels(word) {
+    var superMagicDevice = 0
 
+	for (var i = 0; i < word.length; i +=1) {
+		if (isVowel(word[i])) {
+			superMagicDevice++
+		}
+	}
+
+return superMagicDevice
 }
