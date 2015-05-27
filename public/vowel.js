@@ -9,7 +9,22 @@
 
 function isVowel(letter) {
 
+	var x = letter.toLowerCase();
+
+	if(x==="a" || x==="e" || x==="i" || x==="o" || x==="u"){
+		return true
+	}
+	else{
+		return false
+	}
 }
+isVowel("a");
+isVowel("d");
+isVowel("y");
+isVowel("E");
+isVowel("Q");
+isVowel(" ");
+isVowel("");
 
 /*
   This function should accept a string as a parameter.
@@ -20,5 +35,20 @@ function isVowel(letter) {
 */
 
 function countVowels(word) {
-
+	var x=word.toLowerCase();
+	var counter=0;
+	for (var i = 0; i < x.length; i++) {
+	if(x[i]==="a" || x[i]==="e" || x[i]==="i" || x[i]==="o" || x[i]==="u"){
+		counter  ++
+	}
+	
+  }
+  return counter
 }
+countVowels("Hello, World");
+countVowels("The Iron Yard");
+countVowels("JavaScript Is Great");
+
+
+
+

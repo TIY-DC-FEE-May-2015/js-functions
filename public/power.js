@@ -5,8 +5,12 @@
 
 function multiply(a, b) {
 
+	return a*b
 }
-
+multiply(2, 3);
+multiply(10, 4);
+multiply(-9, 5);
+multiply(1, 0);
 /*
   This function should accept two numbers as parameters.
   We can assume that both numbers are positive integers.
@@ -15,6 +19,10 @@ function multiply(a, b) {
 */
 
 function power(base, exponent) {
+	return Math.pow(base, exponent)
 
 }
-
+power(5, 2);
+power(7, 1);
+power(4, 3);
+power(3, 4);
