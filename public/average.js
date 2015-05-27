@@ -22,6 +22,16 @@ function sum (array) {
 */
 function average (array) {
 
-  return sum(array) / array.length
+  if (array.length === 0) {
+
+    return 0
+
+  }
+
+  else {
+
+    return sum(array) / array.length
+
+  }
 
 }
