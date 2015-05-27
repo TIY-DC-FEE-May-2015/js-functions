@@ -45,4 +45,3 @@ var reverseSentence = function(sentence) {
     return newSentence
 
 }
-
