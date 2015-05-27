@@ -4,7 +4,7 @@
 */
 
 function multiply(a, b) {
-
+	return(a*b)
 }
 
 /*
@@ -15,6 +15,24 @@ function multiply(a, b) {
 */
 
 function power(base, exponent) {
+
+	if (exponent===1) {
+		return base
+	} 
+
+	if (exponent === 0) {
+		return 1
+	}
+
+	else {
+		var product = base;
+		for (i = 2; i <= exponent; i++) {
+			product = multiply(product,base)	
+		}
+
+	}
+
+	return product
 
 }
 
