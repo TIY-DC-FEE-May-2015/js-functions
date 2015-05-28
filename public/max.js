@@ -3,9 +3,10 @@
   It should return the value of the larger number.
 */
 
-function max(a, b) {
+function max (a , b ) { 
+	
 
-}
+
 
 /*
   This function should accept THREE numbers as parameters.

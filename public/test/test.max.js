@@ -1,3 +1,14 @@
+var max = function (a , b) {
+
+  if ( a > b){
+    return a 
+  }
+  else {
+    return b 
+  }
+}
+
+
 describe("Max value functions", function(){
 
   describe("max", function(){
@@ -13,6 +24,17 @@ describe("Max value functions", function(){
 
   });
 
+
+var maxOfThree = function (a , b, c ){
+        var largestInteger 
+    for (var i = 0 ; i <= 3 ; i ++){
+      if i > largestInteger {
+        return i 
+      }
+    }
+
+
+}
   describe("maxOfThree", function(){
 
     it("should return the largest of three numbers", function(){

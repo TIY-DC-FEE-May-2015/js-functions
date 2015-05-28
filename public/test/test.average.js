@@ -1,3 +1,16 @@
+
+var sum = function(array){
+
+  var total = 0; 
+
+    for(var i =0; i < array.length; i++){
+      total = array[i] + total;
+     
+    }
+       return total
+}
+
+
 describe("Average", function(){
 
   it("should have a sum function", function(){
@@ -8,6 +21,20 @@ describe("Average", function(){
     expect(sum([])).to.equal(0);
 
   });
+
+
+var average = function(array) {
+
+  var total = 0; 
+  
+    for(var i =0; i <= array.length, i++){
+      total = array[i] + total;
+      if ( array[i] === array.length){  
+      }
+      return total / array.length;
+    }
+}
+
 
   it("should calculate average", function(){
 

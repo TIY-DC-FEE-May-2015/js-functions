@@ -1,3 +1,12 @@
+
+var multiply = function (a, b) {
+
+   num = a * b
+    return num;
+  
+} 
+
+
 describe("Multiplication and Exponent functions", function(){
   
   describe("multiply", function(){
@@ -12,6 +21,12 @@ describe("Multiplication and Exponent functions", function(){
     });
 
   });
+
+
+var power = function(base, exponent) {
+    return Math.pow(base, exponent)
+  
+} 
 
   describe("power", function(){
 
