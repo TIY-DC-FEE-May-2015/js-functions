@@ -1,3 +1,10 @@
+
+var Sum = function(array) {
+  
+  for( )
+
+}
+
 describe("Average", function(){
 
   it("should have a sum function", function(){
