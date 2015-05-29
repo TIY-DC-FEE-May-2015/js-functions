@@ -7,8 +7,20 @@
   Hint: string.toLowerCase()
 */
 
-function isVowel(letter) {
+function isVowel(letter, isYaVowel) {
 
+ var input = letter.toLowerCase();
+ var answer = false;
+ var vowels = ["a", "e", "i", "o", "u"];
+
+ if (isYaVowel) {
+ 	vowels.push("y");
+ }
+
+ if (vowels.indexOf(input) !== -1) {
+ 	answer = true;
+ }
+ return answer;
 }
 
 /*
@@ -20,5 +32,15 @@ function isVowel(letter) {
 */
 
 function countVowels(word) {
+	
+	var array = word.split("");
+	var numVowels = 0;
 
+	for (var i = 0; i < array.length; i++) {
+		var current = array[i];
+		if (isVowel(current) == true) {
+			numVowels += 1;
+		}
+	}
+	return numVowels;
 }
